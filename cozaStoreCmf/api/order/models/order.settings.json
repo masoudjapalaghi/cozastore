@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order",
+  "info": {
+    "name": "Order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "cartItems": {
+      "type": "json"
+    },
+    "total": {
+      "type": "biginteger"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}
